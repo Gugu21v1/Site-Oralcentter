@@ -1,17 +1,3 @@
 //= link_tree ../images
 //= link_directory ../stylesheets .css
 //= link_tree ../builds
-//= link css/bootstrap.min.css
-//= link css/remixicon.css
-//= link css/flaticon_dolt.css
-//= link css/swiper.bundle.min.css
-//= link css/aos.css
-//= link css/header.css
-//= link css/style.css
-//= link css/footer.css
-//= link css/responsive.css
-//= link css/dark-theme.css
-//= link bootstrap.bundle.min.js
-//= link swiper.bundle.min.js
-//= link aos.js
-//= link main.js
