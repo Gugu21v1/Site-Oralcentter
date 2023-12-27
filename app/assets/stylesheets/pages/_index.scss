@@ -1,0 +1,11 @@
+// Import page-specific CSS files here.
+@import "home";
+@import "franqueado";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:target {
+  scroll-margin-top: .8em;
+}

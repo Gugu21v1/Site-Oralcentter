@@ -1,0 +1,141 @@
+html,
+body {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 98%;
+  background: linear-gradient(45deg, #271f45 0%, rgba(61, 104, 167, 0) 100%);
+  height: 109px;
+  border-bottom-left-radius: 74px;
+  border-bottom-right-radius: 74px;
+  transition: all .4s ease;
+}
+
+header nav div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  font-size: 13px;
+}
+
+header nav div .agende-consulta {
+  margin-left: 16px;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+header nav ul li {
+  margin-inline: 10px;
+  letter-spacing: 1px;
+  margin-top: 20px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  word-wrap: break-word;
+}
+
+.agende-consulta {
+  border-radius: 21px;
+  border: 2px solid #3fe3c2;
+  font-family: "Montserrat", sans-serif;
+  background: rgba(61, 227, 194, 0.4);
+  color: white;
+  padding: 5px 6px;
+}
+
+.nova-cor {
+  background: #2c315d !important;
+}
+
+header nav img {
+  width: 150px;
+  margin-left: 1em;
+}
+
+.toggler-navbar {
+  display: none;
+}
+
+.mostrar-ul {
+  display: flex;
+}
+
+.tirar-bordas {
+  border-radius: 0;
+  width: 100%;
+}
+
+@media (max-width: 1027px) {
+  header nav ul {
+    transition: all .5s ease;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 108px;
+    background: linear-gradient(90deg, #271f45 0%, rgba(61, 104, 167, 0) 156%);
+    padding-left: 0;
+    right: 0%;
+    padding-bottom: 1em;
+    height: 75vh;
+    width: 100%;
+    border-bottom-left-radius: 74px;
+    border-bottom-right-radius: 74px;
+  }
+
+  header nav ul li {
+    margin-top: 30px;
+  }
+
+  .toggler-navbar {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border: 1px black solid;
+    border-radius: 10px;
+  }
+
+  header nav {
+    padding-inline: 3em;
+    justify-content: space-between;
+  }
+}
+
+
+@media (max-width: 553px) {
+  .botao-nav {
+    display: none;
+  }
+}

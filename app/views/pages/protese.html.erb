@@ -1,0 +1,165 @@
+   <section>
+      <div style="display: flex; align-items: center; justify-content: center; text-align: center;">
+      <%= image_tag "implante.png", alt: "banner-servico", crop: :thumb, gravity: :face, class: "imagem-banner-servico" %>
+      </div>
+      <div class="servicos pagina-servico">
+              <ul>
+        <li class="servico">
+          <%= link_to "Implantes <br> Dentários".html_safe, "/implantes#titulo" %>
+        </li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">
+          <%= link_to "Prótese <br> Dentária".html_safe, "/protese#titulo", class: "active" %>
+        </li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">
+          <%= link_to "Harmonização <br> Facial".html_safe, "/harmonizacao#titulo" %>
+        </li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Ortodontia".html_safe, "/ortodontia#titulo" %></li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Odontopediatria".html_safe, "/odontopediatria#titulo" %></li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Endodontia".html_safe, "/endodontia#titulo" %></li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Cirurgia".html_safe, "/cirurgia#titulo" %></li>
+      </ul>
+      </div>
+    </section>
+
+    <section class="sobre-servico">
+      <div>
+        <h1>
+          Prótese <br>
+          Dentária
+        </h1>
+        <%= link_to "AGENDE SUA AVALIAÇÃO", "https://wa.me/553841412002", target: "blank", id: "titulo" %>
+      </div>
+      <div class="textos-servico">
+        <p>
+          A prótese dentária é uma solução eficaz e personalizada para a substituição de dentes ausentes ou danificados. Consiste em uma estrutura artificial que imita a forma e a função dos dentes naturais, sendo projetada para se encaixar perfeitamente na arcada dentária do paciente.
+        </p>
+        <p>
+          Existem diferentes tipos de próteses dentárias disponíveis, cada uma adequada a diferentes necessidades e condições bucais. As próteses removíveis, por exemplo, são projetadas para serem facilmente removidas e colocadas novamente na boca pelo paciente. Elas podem ser parciais, quando substituem apenas alguns dentes, ou totais, quando substituem todos os dentes de uma arcada.
+        </p>
+        <p>
+          Já as próteses fixas, também conhecidas como pontes, são cimentadas ou parafusadas nos dentes adjacentes aos espaços vazios, proporcionando uma solução estável e permanente. Essas próteses são confeccionadas a partir de moldes precisos da boca do paciente, garantindo um encaixe confortável e natural.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <%= render "pages/locais" %>
+    </section>
+
+    <section class="blog">
+      <div>
+      <% valor = 0 %>
+      <% @posts.each do |post| %>
+        <div class="post">
+          <%= cl_image_tag post.img_url.key, alt: "post-#{valor}" %>
+          <h4><%= post.title %></h4>
+          <p><%= post.body.split(/\\n/).join("<br />").html_safe %></p>
+          <%= link_to "Continuar Lendo", post_path(post), class: "continuar" %>
+        </div>
+        <% valor += 1 %>
+        <% end %>
+      </div>
+      <span class="todos"><%= link_to "Ver Todos", posts_path %></span>
+    </section>

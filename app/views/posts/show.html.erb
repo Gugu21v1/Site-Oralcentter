@@ -1,0 +1,35 @@
+<section class="sobre-post">
+  <div class="titulo-do-post" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path @post.img_url.key, height: 300, crop: :fill %>')">
+    <h1><%= @post.title %></h1>
+  </div>
+  <p><%= @post.body.split(/\\n/).join("<br />").html_safe %></p>
+  <span class="data-post"><%= @post.data %></span>
+  <% if current_user %>
+    <% if current_user.admin == true %>
+      <%= link_to "Excluir Post",
+    post_path(@post),
+    data: {turbo_method: :delete, turbo_confirm: "Você tem certeza que deseja excluir este Post? Essa ação não pode ser desfeita!"}
+  %>
+    <% end %>
+  <% end %>
+</section>
+<section class="mais-posts">
+  <div class="container mais-posts-flex">
+    <h3>MAIS POSTS</h3>
+    <%= link_to "Ver todos os posts", posts_path, class: "todas-noticias" %>
+  </div>
+  <div class="blog margin-top">
+    <div>
+      <% valor = 0 %>
+      <% @posts.each do |post| %>
+        <div class="post">
+          <%= cl_image_tag post.img_url.key, alt: "post-#{valor}" %>
+          <h4><%= post.title %></h4>
+          <p><%= post.body.split(/\\n/).join("<br />").html_safe %></p>
+          <%= link_to "Continuar Lendo", post_path(post), class: "continuar" %>
+        </div>
+        <% valor += 1 %>
+      <% end %>
+    </div>
+  </div>
+</section>

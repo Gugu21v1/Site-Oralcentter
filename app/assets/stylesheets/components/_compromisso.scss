@@ -1,0 +1,317 @@
+.compromisso > h2 {
+  color: #4e3d8a;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px; /* 113.333% */
+  margin-top: 0;
+}
+
+.compromisso > h2 span {
+  color: #4e3d8a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.secao-compromisso {
+  border-radius: 260px 260px 0px 0px;
+  background: #258eb7;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-bottom: 4em;
+}
+
+.secao-compromisso img {
+  margin-top: 2em;
+  margin-bottom: -4em;
+  width: 40%;
+}
+
+.secao-compromisso .textos-compromisso {
+  width: 40%;
+}
+
+.textos-compromisso h2 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 40px; /* 113.333% */
+  margin-bottom: 0.5em;
+  width: 85%;
+  margin-top: 25px;
+}
+
+.textos-compromisso h2 span {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.textos-compromisso p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 175% */
+  letter-spacing: 0.5px;
+}
+
+.secao-locais {
+  border-radius: 0px 0px 170px 170px;
+  background: #4e3d8a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.secao-locais iframe {
+  margin-top: -70px;
+  background: #4e3d8a;
+  margin-inline: 1em;
+}
+
+.clinicas {
+  width: 80%;
+  border-radius: 108px;
+  margin: 50px auto;
+  background: url("background-locais.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 40px 0;
+  flex-direction: column;
+}
+
+.clinicas div.div1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.clinicas div.div1 div.div2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 33%;
+}
+
+.clinicas h3 {
+  color: #3fe3c2;
+  text-align: right;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 34px; /* 113.725% */
+  margin-inline: 1em;
+}
+
+.clinicas .icone-local {
+  min-width: 30px;
+  margin-inline: 1em;
+}
+
+.div-do-input {
+  width: 57%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.clinicas select {
+  margin: 10px auto;
+  -webkit-appearance: none;
+  border-radius: 35px;
+  min-width: 280px;
+  border: 2px solid #3fe3c2;
+  background: rgba(61, 227, 194, 0.4);
+  color: white;
+  padding: 15px;
+  padding-left: 25px;
+  width: 100%;
+  text-align: start;
+  margin-inline: 0.5em;
+}
+
+select option {
+  color: rgb(0,0,0);
+}
+
+.clinicas input::placeholder {
+  color: rgb(202, 202, 202);
+  width: 100%;
+  text-align: start;
+}
+
+.cidades {
+  width: 90%;
+}
+
+.nome-cidade, .nome-estado {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px; /* 113.333% */
+  width: 80%;
+  margin-left: 0.8em;
+  margin-bottom: 0.5em;
+}
+
+.nome-estado {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.enderecos {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.endereco {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  align-self: flex-start;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 30px; /* 113.333% */
+  margin: 0.5em 1em;
+}
+
+.cidade {
+  display: none;
+}
+
+.mostrar {
+  display: block !important;
+  margin-top: 1.5em;
+}
+
+@media (max-width: 992px) {
+  .clinicas .search-icon {
+    right: 15%;
+  }
+}
+
+@media (max-width: 787px) {
+  .secao-compromisso .textos-compromisso {
+    width: 80%;
+    margin-top: 3em;
+    text-align: center;
+  }
+
+  .textos-compromisso h2 {
+    width: 100%;
+  }
+
+  .textos-compromisso p {
+    margin-bottom: 2em;
+  }
+
+  .secao-compromisso img {
+    width: 60%;
+  }
+
+  .clinicas div.div1 div.div2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .clinicas .search-icon {
+    right: 18%;
+  }
+
+  .clinicas input {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 664px) {
+  .compromisso > h2,
+  .compromisso > h2 span {
+    font-size: 30px;
+    margin-top: 1.4em;
+  }
+
+  .div-do-input {
+    width: 70%;
+    margin-left: 1em;
+  }
+
+  .clinicas h3 {
+    font-size: 25px;
+  }
+
+  .textos-compromisso h2,
+  .textos-compromisso h2 span {
+    font-size: 28px;
+    margin-top: 1em;
+  }
+}
+
+@media (max-width: 565px) {
+  .search-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 508px) {
+  .clinicas {
+    border-radius: 78px;
+  }
+
+  .clinicas h3 {
+    margin-inline: .5em;
+  }
+}
+
+@media (max-width: 488px) {
+  .secao-compromisso img {
+    width: 80%;
+  }
+
+  .div-do-input {
+    width: 85%;
+    margin-left: 0;
+  }
+
+  .clinicas {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  .clinicas h3 {
+    text-align: center;
+  }
+
+  .clinicas .icone-local {
+    margin-inline: 0;
+  }
+}

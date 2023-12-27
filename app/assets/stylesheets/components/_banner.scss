@@ -1,0 +1,128 @@
+.banner {
+  background: linear-gradient(149deg, #258eb7 0%, #573e95 100%);
+  margin-top: -1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.banner .flex-banner {
+  padding-top: 8em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.banner .flex-banner h1 {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 93px; /* 100% */
+  margin-left: 1em;
+}
+
+.bold {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 93px;
+}
+
+.servicos {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 51px;
+  padding: 1.5em;
+  background: #fff;
+  box-shadow: 0px 40px 30px 0px rgba(62, 219, 191, 0.5);
+}
+
+.banner img {
+  margin-left: 2.9em;
+  width: 35%;
+}
+
+.servicos ul {
+  padding: 0;
+  margin: auto 2em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.servicos ul li {
+  text-align: center;
+  margin: .5em 1em;
+}
+
+.servicos ul li a {
+  color: #4e3d8a;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 121.739% */
+  transition: all .5s ease;
+  background-color: transparent;
+}
+
+.servicos ul li.servico:hover a {
+  color: rgba(62, 219, 191, 1);
+  text-shadow: 0 7px 30px #4e3d8a;
+}
+
+@media (max-width: 664px) {
+  .banner .flex-banner h1, .banner .flex-banner h1 span {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .servicos {
+    top: 80px;
+  }
+
+  .banner img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 488px) {
+  .servicos ul svg {
+    display: none;
+  }
+
+  .servicos ul li {
+    margin-inline: 1em;
+    border-bottom: 1px solid #4e3d8a;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .servicos {
+    top: 100px;
+  }
+
+  .banner img {
+    width: 80%;
+  }
+}

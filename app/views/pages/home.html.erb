@@ -1,0 +1,175 @@
+<section class="banner">
+  <div class="flex-banner">
+    <h1>
+      Aqui todos <br />
+      <span class="bold">podem sorrir!</span>
+    </h1>
+    <%= image_tag "dentista-banner.png", alt: "dentista sorrindo", class: "dentista" %>
+  </div>
+</section>
+<span id="servicos"></span>
+<div class="servicos">
+  <ul>
+    <li class="servico">
+      <%= link_to "Implantes <br> Dentários".html_safe, "/implantes#titulo" %>
+    </li>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="3"
+      height="65"
+      viewBox="0 0 3 65"
+      fill="none"
+      >
+      <line
+        x1="1.5"
+        y1="1"
+        x2="1.5"
+        y2="64"
+        stroke="#CCCCCC"
+        stroke-width="2"
+        stroke-linecap="round"
+        />
+    </svg>
+    <li class="servico">
+      <%= link_to "Prótese <br> Dentária".html_safe, "/protese#titulo" %>
+    </li>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="3"
+      height="65"
+      viewBox="0 0 3 65"
+      fill="none"
+      >
+      <line
+        x1="1.5"
+        y1="1"
+        x2="1.5"
+        y2="64"
+        stroke="#CCCCCC"
+        stroke-width="2"
+        stroke-linecap="round"
+        />
+    </svg>
+    <li class="servico">
+      <%= link_to "Harmonização <br> Facial".html_safe, "/harmonizacao#titulo" %>
+    </li>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="3"
+      height="65"
+      viewBox="0 0 3 65"
+      fill="none"
+      >
+      <line
+        x1="1.5"
+        y1="1"
+        x2="1.5"
+        y2="64"
+        stroke="#CCCCCC"
+        stroke-width="2"
+        stroke-linecap="round"
+        />
+    </svg>
+    <li class="servico">          <%= link_to "Ortodontia".html_safe, "/ortodontia#titulo" %></li>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="3"
+      height="65"
+      viewBox="0 0 3 65"
+      fill="none"
+      >
+      <line
+        x1="1.5"
+        y1="1"
+        x2="1.5"
+        y2="64"
+        stroke="#CCCCCC"
+        stroke-width="2"
+        stroke-linecap="round"
+        />
+    </svg>
+    <li class="servico">          <%= link_to "Odontopediatria".html_safe, "/odontopediatria#titulo" %></li>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="3"
+      height="65"
+      viewBox="0 0 3 65"
+      fill="none"
+      >
+      <line
+        x1="1.5"
+        y1="1"
+        x2="1.5"
+        y2="64"
+        stroke="#CCCCCC"
+        stroke-width="2"
+        stroke-linecap="round"
+        />
+    </svg>
+    <li class="servico">          <%= link_to "Endodontia".html_safe, "/endodontia#titulo" %></li>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="3"
+      height="65"
+      viewBox="0 0 3 65"
+      fill="none"
+      >
+      <line
+        x1="1.5"
+        y1="1"
+        x2="1.5"
+        y2="64"
+        stroke="#CCCCCC"
+        stroke-width="2"
+        stroke-linecap="round"
+        />
+    </svg>
+    <li class="servico">          <%= link_to "Cirurgia".html_safe, "/cirurgia#titulo" %></li>
+  </ul>
+</div>
+<span id="compromisso"></span>
+<section class="compromisso">
+  <h2>
+    Tudo que você precisa <br />
+    <span class="bold">em um único lugar</span>
+  </h2>
+  <div class="secao-compromisso">
+    <%= image_tag "Foto-socios.png", alt: "dentistas sorrindo" %>
+    <div class="textos-compromisso">
+      <h2>
+        Nosso compromisso <br />
+        <span class="bold">é devolver sorrisos!</span>
+      </h2>
+      <p>
+        A OralCentter surgiu através da união de propósitos de dois colegas
+        que após anos trabalhando juntos, vimos a disparidade e condições
+        precárias que os tratamentos odontológicos eram oferecidos ao
+        público C (que corresponde a mais de 50% da população) e nos
+        comprometemos a cuidar dos nossos pacientes dando o melhor de nós e
+        oferecendo condições de realizar a mudança. Nós acreditamos que
+        receber um tratamento Odontológico de excelência é direito de todos
+        os pacientes, independente da condição social. Nós tratamos o nosso
+        paciente com a figura mais importante da clínica e estamos focados
+        em garantir cada vez mais o conforto, resolutividade e conveniência
+        para ele. O bom atendimento é nosso dever. Qualidade na entrega é
+        nossa obrigação.
+      </p>
+    </div>
+  </div>
+  <%= render "pages/locais" %>
+</section>
+<section class="blog" id="empreenda">
+  <div>
+    <% valor = 0 %>
+    <% @posts.each do |post| %>
+    <div class="post">
+      <%= cl_image_tag post.img_url.key, alt: "post-#{valor}" %>
+      <h4><%= post.title %></h4>
+      <p><%= post.body.split(/\\n/).join("<br />").html_safe %></p>
+      <%= link_to "Continuar Lendo", post_path(post), class: "continuar" %>
+    </div>
+    <% valor += 1 %>
+    <% end %>
+  </div>
+  <span class="todos"><%= link_to "Ver Todos", posts_path %></span>
+</section>

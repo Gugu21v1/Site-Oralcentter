@@ -1,0 +1,170 @@
+   <section>
+      <div style="display: flex; align-items: center; justify-content: center; text-align: center;">
+      <%= image_tag "implante.png", alt: "banner-servico", crop: :thumb, gravity: :face, class: "imagem-banner-servico" %>
+      </div>
+      <div class="servicos pagina-servico">
+              <ul>
+        <li class="servico">
+          <%= link_to "Implantes <br> Dentários".html_safe, "/implantes#titulo" %>
+        </li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">
+          <%= link_to "Prótese <br> Dentária".html_safe, "/protese#titulo" %>
+        </li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">
+          <%= link_to "Harmonização <br> Facial".html_safe, "/harmonizacao#titulo" %>
+        </li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Ortodontia".html_safe, "/ortodontia#titulo", class: "active" %></li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Odontopediatria".html_safe, "/odontopediatria#titulo" %></li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Endodontia".html_safe, "/endodontia#titulo" %></li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Cirurgia".html_safe, "/cirurgia#titulo" %></li>
+      </ul>
+      </div>
+    </section>
+
+    <section class="sobre-servico">
+      <div>
+        <h1>
+          Ortodontia
+        </h1>
+        <%= link_to "AGENDE SUA AVALIAÇÃO", "https://wa.me/553841412002", target: "blank", id: "titulo" %>
+      </div>
+      <div class="textos-servico">
+        <p>
+          A Ortodontia é uma especialidade da odontologia que se concentra no alinhamento dos dentes e na correção das irregularidades da mordida. Seu principal objetivo não é apenas melhorar a estética do sorriso, mas também promover uma saúde bucal otimizada. <br><br>
+
+Por meio de uma variedade de dispositivos e técnicas, os ortodontistas trabalham para corrigir problemas como dentes tortos, desalinhamentos, espaçamentos irregulares e má oclusão. A má oclusão, também conhecida como "mordida incorreta", pode causar dificuldades na mastigação, fala e até mesmo problemas de saúde a longo prazo. <br><br>
+        </p>
+        <p>
+          Os tratamentos ortodônticos podem incluir o uso de aparelhos fixos, como braquetes e fios metálicos, ou opções mais discretas, como aparelhos estéticos e alinhadores transparentes. O processo de ortodontia envolve a aplicação gradual de forças controladas para mover os dentes e a mandíbula para posições mais alinhadas. <br><br>
+
+Além dos benefícios estéticos evidentes, a ortodontia também oferece vantagens significativas para a saúde bucal. Dentes alinhados são mais fáceis de limpar, reduzindo o risco de cáries, doenças gengivais e problemas de mordida que podem causar desgaste excessivo nos dentes. Um sorriso bem alinhado também pode melhorar a autoconfiança e a qualidade de vida do paciente. <br><br>
+        </p>
+        <p>
+O tratamento ortodôntico geralmente começa com uma consulta detalhada, onde o ortodontista avalia a condição bucal do paciente e discute suas preocupações e objetivos. Com base nessa avaliação, um plano personalizado é criado, delineando os procedimentos necessários e a duração estimada do tratamento. <br><br>
+
+No decorrer do tratamento, os pacientes geralmente fazem visitas regulares ao ortodontista para ajustes e monitoramento do progresso. Cada caso é único, e a duração do tratamento pode variar dependendo da complexidade das correções necessárias.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <%= render "pages/locais" %>
+    </section>
+
+    <section class="blog">
+      <div>
+      <% valor = 0 %>
+      <% @posts.each do |post| %>
+        <div class="post">
+          <%= cl_image_tag post.img_url.key, alt: "post-#{valor}" %>
+          <h4><%= post.title %></h4>
+          <p><%= post.body.split(/\\n/).join("<br />").html_safe %></p>
+          <%= link_to "Continuar Lendo", post_path(post), class: "continuar" %>
+        </div>
+        <% valor += 1 %>
+        <% end %>
+      </div>
+      <span class="todos"><%= link_to "Ver Todos", posts_path %></span>
+    </section>

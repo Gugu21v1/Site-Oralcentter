@@ -1,0 +1,167 @@
+   <section>
+      <div style="display: flex; align-items: center; justify-content: center; text-align: center;">
+      <%= image_tag "implante.png", alt: "banner-servico", crop: :thumb, gravity: :face, class: "imagem-banner-servico" %>
+      </div>
+      <div class="servicos pagina-servico">
+              <ul>
+        <li class="servico">
+          <%= link_to "Implantes <br> Dentários".html_safe, "/implantes#titulo" %>
+        </li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">
+          <%= link_to "Prótese <br> Dentária".html_safe, "/protese#titulo" %>
+        </li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">
+          <%= link_to "Harmonização <br> Facial".html_safe, "/harmonizacao#titulo" %>
+        </li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Ortodontia".html_safe, "/ortodontia#titulo" %></li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Odontopediatria".html_safe, "/odontopediatria#titulo" %></li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Endodontia".html_safe, "/endodontia#titulo" %></li>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="3"
+          height="65"
+          viewBox="0 0 3 65"
+          fill="none"
+        >
+          <line
+            x1="1.5"
+            y1="1"
+            x2="1.5"
+            y2="64"
+            stroke="#CCCCCC"
+            stroke-width="2"
+            stroke-linecap="round"
+          />
+        </svg>
+        <li class="servico">          <%= link_to "Cirurgia".html_safe, "/cirurgia#titulo", class: "active" %></li>
+      </ul>
+      </div>
+    </section>
+
+    <section class="sobre-servico">
+      <div>
+        <h1>
+          Cirurgia
+        </h1>
+        <%= link_to "AGENDE SUA AVALIAÇÃO", "https://wa.me/553841412002", target: "blank", id: "titulo" %>
+      </div>
+      <div class="textos-servico">
+        <p>
+          A Cirurgia Odontológica é uma área da odontologia que engloba uma variedade de procedimentos cirúrgicos realizados na boca e nas estruturas faciais. Esses procedimentos são frequentemente realizados por cirurgiões dentistas especializados e visam tratar condições complexas, corrigir problemas estruturais e melhorar a saúde e estética bucais.
+        </p>
+        <p>
+
+Cada procedimento cirúrgico é planejado com base nas necessidades do paciente e nas características únicas da condição a ser tratada. Consultar um cirurgião dentista especializado é fundamental para avaliar as opções de tratamento, entender os procedimentos envolvidos e obter orientações sobre o pós-operatório.
+
+        </p>
+        <p>
+
+Em resumo, a Cirurgia Odontológica engloba uma variedade de procedimentos cirúrgicos que tratam problemas dentários, estruturais e estéticos. Esses procedimentos são realizados por cirurgiões dentistas especializados e visam melhorar a saúde, função e estética bucais. Se você está enfrentando problemas que requerem intervenções cirúrgicas, consulte um profissional qualificado para avaliar suas opções de tratamento e garantir o cuidado adequado para a sua saúde bucal.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <%= render "pages/locais" %>
+    </section>
+
+    <section class="blog">
+      <div>
+      <% valor = 0 %>
+      <% @posts.each do |post| %>
+        <div class="post">
+          <%= cl_image_tag post.img_url.key, alt: "post-#{valor}" %>
+          <h4><%= post.title %></h4>
+          <p><%= post.body.split(/\\n/).join("<br />").html_safe %></p>
+          <%= link_to "Continuar Lendo", post_path(post), class: "continuar" %>
+        </div>
+        <% valor += 1 %>
+        <% end %>
+      </div>
+      <span class="todos"><%= link_to "Ver Todos", posts_path %></span>
+    </section>

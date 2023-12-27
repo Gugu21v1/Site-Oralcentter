@@ -1,0 +1,490 @@
+.banner-franqueado {
+  background: linear-gradient(274deg, #258eb7 22.24%, #573e95 99.09%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.banner-franqueado h1 {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 70px;
+}
+
+.banner-franqueado span.invista {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 70px; /* 127.397% */
+}
+
+.banner-franqueado .bold-franqueado {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.banner-franqueado img {
+  width: 35%;
+}
+
+.historia {
+  border-radius: 260px 0px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.historia img {
+  width: 40%;
+  margin-top: 2em;
+}
+
+.historia h2 {
+  color: #4e3d8a;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 48px; /* 113.333% */
+}
+
+.historia h2 .clinica-propria {
+  color: #4e3d8a;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.historia div {
+  width: 50%;
+}
+
+.historia p {
+  margin-top: 20px;
+  color: #4e3d8a;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 140% */
+  width: 67%;
+}
+
+.secao-suporte {
+  border-radius: 0px 260px;
+  background: #4e3d8a;
+}
+
+.secao-suporte h2 {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 48px; /* 113.333% */
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.secao-suporte h2 .clinica-crescer {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.suportes {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 64px;
+}
+
+.suportes .suporte {
+  width: 23%;
+  margin-inline: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+
+  .texto-suporte {
+    color: #fff;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 37px; /* 148% */
+    margin-top: 16px;
+
+    .enfase-suporte {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 37px;
+    }
+  }
+}
+
+.treinamentos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .lado-esquerdo {
+    width: 50%;
+    background: linear-gradient(74deg, #258eb7 37.11%, #4e3d8a 97.29%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 36%;
+      margin-top: 64px;
+      margin-bottom: 64px;
+    }
+
+    h2 {
+      color: #fff;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px; /* 113.333% */
+      margin-bottom: 32px;
+      margin-inline: 20px;
+
+      .treinamentos-mensais {
+        color: #fff;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: italic;
+        font-weight: 700;
+        line-height: 48px;
+      }
+    }
+
+    .mxw-195 {
+      max-width: 195px;
+    }
+  }
+
+  .lado-direito {
+    width: 50%;
+    background: #fff;
+
+    .logo-colorida {
+      margin-top: 3em;
+      width: 50%;
+      max-width: 295px;
+    }
+
+    h2 {
+      color: #4e3d8a;
+      font-family: Montserrat;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 48px; /* 113.333% */
+      margin-left: 64px;
+      margin-top: 64px;
+      margin-bottom: 32px;
+    }
+
+    ul {
+      list-style: none;
+      margin-left: 64px;
+      padding: 0;
+
+      li {
+        margin: 20px auto;
+        color: #000;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.lado-direito,
+.lado-esquerdo {
+  height: 692px;
+}
+
+.depoimentos {
+  background: #3e3072;
+
+  h2 {
+    color: #3fe3c2;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px; /* 113.333% */
+    padding: 64px 0;
+
+    .franqueados {
+      color: #3fe3c2;
+      font-family: Montserrat;
+      font-size: 45px;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 48px;
+    }
+  }
+
+  iframe {
+    margin: auto auto;
+    width: 60%;
+    height: 400px;
+    margin-bottom: 126px;
+    border-radius: 50px;
+    background: #4e3d8a;
+  }
+}
+
+.formulario-franquia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .texto-formulario {
+    width: 24%;
+    margin-left: 128px;
+    margin-top: 128px;
+    margin-right: 15px;
+
+    h2 {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 48px; /* 125.714% */
+    }
+
+    p {
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 31px; /* 150% */
+      margin-top: 64px;
+    }
+  }
+
+  form {
+    width: 57%;
+    margin-right: 32px;
+  }
+
+  .formulario {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: 60px;
+    margin-top: 128px;
+
+    input {
+      border-radius: 35px;
+      border: 2px solid #3e3072;
+      background: rgba(87, 62, 149, 0.7);
+      margin: 10px;
+      padding: 10px;
+      font-size: 17px;
+      color: #fff;
+      width: 44%;
+
+      &::placeholder {
+        color: #e2dfdf;
+      }
+    }
+
+    input.botao-submit {
+      color: #fff;
+      width: 92.5%;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      background: #4e3d8a;
+      border: 2px solid #3e3072;
+      transition: ease 0.4s all;
+
+      &:hover {
+        background: #4a3c7c;
+      }
+    }
+  }
+}
+
+.borda-260 {
+  border-radius: 260px 0;
+}
+
+@media (max-width: 1010px) {
+  .banner-franqueado h1 {
+    font-size: 40px;
+    text-align: start;
+    margin-top: 3em;
+    margin-left: 20px;
+
+    .invista,
+    .bold-franqueado {
+      font-size: 40px;
+    }
+  }
+}
+
+@media (max-width: 787px) {
+  .historia img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 766px) {
+  .banner-franqueado h1 {
+    text-align: center;
+  }
+
+  .banner-franqueado img {
+    width: 50%;
+  }
+
+  .historia, .borda-260 {
+    border-radius: 200px 0px;
+  }
+
+  .secao-suporte {
+    border-radius: 0px 200px;
+  }
+
+  .historia div {
+    width: 80%;
+  }
+
+  .historia img,
+  .historia p,
+  .historia h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  .margin-bottom-lg {
+    margin-bottom: 4em;
+  }
+}
+
+@media (max-width: 920px) {
+  .formulario-franquia .texto-formulario {
+    width: 100%;
+    margin-inline: 0;
+    text-align: center;
+    margin-top: 64px;
+
+    p {
+      margin-top: 32px;
+    }
+  }
+
+  .formulario-franquia form {
+    width: 80%;
+    margin: auto;
+
+    .formulario {
+      margin-top: 32px;
+    }
+  }
+}
+
+@media (max-width: 706px) {
+  .secao-suporte h2 {
+    font-size: 28px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+
+    .clinica-crescer {
+      font-size: 28px;
+    }
+  }
+
+  .depoimentos iframe {
+    width: 90%;
+  }
+
+  .depoimentos h2 {
+    font-size: 35px;
+
+    .franqueados {
+      font-size: 35px;
+    }
+  }
+
+  .treinamentos .lado-esquerdo h2 {
+    font-size: 28px;
+
+      .treinamentos-mensais {
+      font-size: 28px;
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .treinamentos .lado-direito,
+  .treinamentos .lado-esquerdo {
+    width: 100%;
+  }
+
+  .treinamentos .lado-direito h2 {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 622px) {
+  .formulario-franquia .formulario input, .formulario-franquia .formulario input.botao-submit {
+    width: 100%;
+  }
+}

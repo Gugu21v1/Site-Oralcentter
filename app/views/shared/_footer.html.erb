@@ -1,0 +1,63 @@
+<footer>
+  <%= image_tag "logo-oral-branca.svg", alt: "Logo OralCenter Branca" %>
+  <%= link_to "Agende sua consulta", "https://wa.me/553841412002", class: "agende-consulta", target: "blank" %>
+  <ul>
+    <li><%= link_to "Tratamentos", "/#servicos" %></li>
+    <li><%= link_to "Empresa", "/#compromisso" %></li>
+    <li><%= link_to "Nossas Clínicas", "/#clinicas" %></li>
+    <li><%= link_to "Empreendedorismo", "/#empreenda" %></li>
+    <li><%= link_to "SEJA UM FRANQUEADO", franqueado_path %></li>
+  </ul>
+  <ul class="servicos-footer">
+    <li><%= link_to "Implantes Dentários".html_safe, implantes_path %></li>
+    <li><%= link_to "Prótese Dentária".html_safe, protese_path %></li>
+    <li><%= link_to "Harmonização Facial".html_safe, harmonizacao_path %></li>
+    <li><%= link_to "Ortodontia".html_safe, ortodontia_path %></li></li>
+    <li><%= link_to "Odontopediatria".html_safe, odontopediatria_path %></li></li>
+    <li><%= link_to "Endodontia".html_safe, endodontia_path %></li></li>
+    <li><%= link_to "Cirurgia".html_safe, cirurgia_path %></li></li>
+  </ul>
+    <div class="final-footer">
+      <div class="icones">
+        <a href="https://wa.me/553841412002" target="blank">
+          <i class="fa-brands fa-whatsapp fa-2xl"></i>
+        </a>
+        <a href="https://www.facebook.com/oralcentter" target="blank">
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="40"
+              viewBox="0 0 68 67"
+              fill="none"
+              class="icone-face"
+            >
+            <path
+                d="M67.4841 33.5651C67.4841 15.0231 52.461 0 33.919 0C15.377 0 0.353882 15.0231 0.353882 33.5651C0.353882 50.3178 12.6281 64.204 28.6744 66.7241V43.2678H20.1478V33.5651H28.6744V26.1699C28.6744 17.7584 33.6821 13.112 41.352 13.112C45.0252 13.112 48.8663 13.7671 48.8663 13.7671V22.023H44.6327C40.4642 22.023 39.1635 24.6108 39.1635 27.2649V33.5651H48.4724L46.9836 43.2678H39.1635V66.7241C55.2098 64.204 67.4841 50.3178 67.4841 33.5651Z"
+                fill="#3FE3C2"
+            />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/oralcentter/" target="blank">
+          <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="35"
+              height="40"
+              viewBox="0 0 67 67"
+              fill="none"
+          >
+            <path
+                d="M33.6379 16.2548C24.1687 16.2548 16.5307 23.8928 16.5307 33.362C16.5307 42.8313 24.1687 50.4693 33.6379 50.4693C43.1072 50.4693 50.7451 42.8313 50.7451 33.362C50.7451 23.8928 43.1072 16.2548 33.6379 16.2548ZM33.6379 44.484C27.5186 44.484 22.516 39.4962 22.516 33.362C22.516 27.2279 27.5037 22.2401 33.6379 22.2401C39.7721 22.2401 44.7599 27.2279 44.7599 33.362C44.7599 39.4962 39.7572 44.484 33.6379 44.484ZM55.4351 15.5551C55.4351 17.7735 53.6485 19.5452 51.4449 19.5452C49.2265 19.5452 47.4547 17.7586 47.4547 15.5551C47.4547 13.3515 49.2414 11.5649 51.4449 11.5649C53.6485 11.5649 55.4351 13.3515 55.4351 15.5551ZM66.7655 19.6048C66.5124 14.2597 65.2915 9.5251 61.3757 5.62424C57.4749 1.72338 52.7402 0.502496 47.3952 0.234498C41.8863 -0.0781661 25.3746 -0.0781661 19.8658 0.234498C14.5356 0.487607 9.80098 1.70849 5.88523 5.60935C1.96948 9.51021 0.763483 14.2448 0.495485 19.5899C0.18282 25.0988 0.18282 41.6104 0.495485 47.1193C0.748594 52.4644 1.96947 57.199 5.88523 61.0998C9.80098 65.0007 14.5207 66.2216 19.8658 66.4896C25.3746 66.8022 41.8863 66.8022 47.3952 66.4896C52.7402 66.2365 57.4749 65.0156 61.3757 61.0998C65.2766 57.199 66.4975 52.4643 66.7655 47.1193C67.0781 41.6104 67.0781 25.1137 66.7655 19.6048ZM59.6486 53.0301C58.4873 55.9483 56.2391 58.1965 53.306 59.3727C48.9138 61.1147 38.4917 60.7127 33.6379 60.7127C28.7842 60.7127 18.3471 61.0998 13.9698 59.3727C11.0516 58.2114 8.80343 55.9632 7.62721 53.0301C5.88522 48.6379 6.28722 38.2158 6.28722 33.362C6.28722 28.5083 5.90011 18.0713 7.62721 13.694C8.78854 10.7758 11.0367 8.52755 13.9698 7.35134C18.362 5.60935 28.7842 6.01135 33.6379 6.01135C38.4917 6.01135 48.9287 5.62424 53.306 7.35134C56.2242 8.51266 58.4724 10.7609 59.6486 13.694C61.3906 18.0861 60.9886 28.5083 60.9886 33.362C60.9886 38.2158 61.3906 48.6528 59.6486 53.0301Z"
+                fill="#3FE3C2"
+            />
+          </svg>
+        </a>
+      </div>
+        <a href="tel:+5538992185111" class="numero">(38) 99218-5111</a>
+      </div>
+      <%= link_to new_post_path, class: "configs" do %>
+        <i class="fa-solid fa-gear"></i>
+      <% end %>
+      <span class="creditos">
+        Desenvolvido por <%= link_to "FSWeb", "https://www.fswebsite.net", target: "blank" %> © <%= link_to "Nobilis!", "https://www.nobilismkt.com" %>
+      </span>
+</footer>
