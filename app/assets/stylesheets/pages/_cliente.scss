@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+.contrato-titulo {
+  color: #4e3d8a;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px; /* 100% */
+  margin-top: 128px;
+  margin-inline: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.contrato-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contrato-imagem {
+  border-radius: 20px;
+  border: 1px solid #3fe3c2;
+  background: lightgray 50% / cover no-repeat;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 50%;
+}
+
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.tipo-contrato {
+  color: #4e3d8a;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Montserrat;
+}
+
+@media ( max-width:570px ) {
+  .contrato-titulo {
+    font-size: 40px;
+  }
+}

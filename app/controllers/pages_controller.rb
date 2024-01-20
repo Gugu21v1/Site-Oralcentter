@@ -37,4 +37,11 @@ class PagesController < ApplicationController
   def protese
     @posts = Post.last(3)
   end
+
+  def cliente
+    if current_user.cliente == false
+      redirect_to root_path
+      flash[:alert] = "Somente clientes podem acessar essa página."
+    end
+  end
 end
