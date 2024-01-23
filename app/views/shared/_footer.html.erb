@@ -6,7 +6,7 @@
     <li><%= link_to "Empresa", "/#compromisso" %></li>
     <li><%= link_to "Nossas Clínicas", "/#clinicas" %></li>
     <li><%= link_to "Empreendedorismo", "/#empreenda" %></li>
-    <li><%= link_to "Área do Cliente", "cliente" %></li>
+    <li><%= link_to "Área do Paciente", "paciente" %></li>
     <li><%= link_to "SEJA UM FRANQUEADO", "https://franqueado.oralcentter.com.br/" %></li>
   </ul>
   <ul class="servicos-footer">
@@ -55,9 +55,16 @@
       </div>
         <a href="tel:+5538992185111" class="numero">(38) 99218-5111</a>
       </div>
-      <%= link_to new_post_path, class: "configs" do %>
-        <i class="fa-solid fa-gear"></i>
-      <% end %>
+      <div class="d-flex align-items-center justify-content-center w-100">
+        <%= link_to new_post_path, class: "configs" do %>
+          <i class="fa-solid fa-gear"></i>
+        <% end %>
+        <% if user_signed_in? %>
+          <%= link_to destroy_user_session_path, method: :delete, data: { turbo_method: :delete }, class: "logout" do %>
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <% end %>
+        <% end %>
+      </div>
       <span class="creditos">
         Desenvolvido por <%= link_to "FSWeb", "https://www.fswebsite.net", target: "blank" %> © <%= link_to "Nobilis!", "https://www.nobilismkt.com" %>
       </span>

@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   get "ortodontia", to: "pages#ortodontia"
   get "protese", to: "pages#protese"
   get "franqueado", to: "pages#franqueado"
-  get "cliente", to: "pages#cliente"
+  get "paciente", to: "pages#cliente"
 
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 

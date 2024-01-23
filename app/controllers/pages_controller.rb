@@ -41,7 +41,7 @@ class PagesController < ApplicationController
   def cliente
     if current_user.cliente == false
       redirect_to root_path
-      flash[:alert] = "Somente clientes podem acessar essa página."
+      flash[:alert] = "Somente pacientes podem acessar essa página."
     end
   end
 end
